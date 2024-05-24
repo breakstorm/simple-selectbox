@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Selectbox Example1</title>
+</head>
+<body>
+<!--<script src="./example1.js "></script>-->
+<script src="./ss.js"></script>
+<h1>Simple Selectbox Example1</h1>
+
+<section>
+    <p>regular select tag like a below</p>
+    <div class="ss__dropdown--parent">
+        <div class="ss__dropdown--show"
+             style="background: #eee; display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 1rem">
+            <p>hello world</p>
+            <p data-status=""><i>
+                <svg fill="#000000" height="16px" width="16px" version="1.1" id="Layer_1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 330 330" xml:space="preserve">
+<path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+	l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+	C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+</svg>
+            </i></p>
+        </div>
+        <div class="ss__dropdown--child" style="border: 1px solid #333; border-top: none; padding: 0.5rem 1rem;">
+            <div class="ss__search">
+                <input type="text" style="display: block;
+    border: 1px solid #333;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;">
+            </div>
+            <div class="ss__list">
+                <ul style="overflow: auto; max-height: calc(1.5rem * 4);">
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>apple</li>
+                    <li>banana</li>
+                    <li>carrot</li>
+                    <li>melon</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section>-->
+<!--    <p>lightning design system combobox markup</p>-->
+<!--    <div class="form-element" style="position: relative; min-width: 0;">-->
+<!--        <label class="form-element__label"-->
+<!--               style="overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; hyphens: auto; display: inline-block; color:  #444; font-size: .75rem; padding-right: .5rem; padding-top: .25rem; margin-bottom: .125rem;">Relate-->
+<!--            To</label>-->
+<!--        <div class="form-element__control" style="clear: left; position: relative;">-->
+<!--            <div class="combobox_container" style="display: flex; flex-direction: column; position: relative; ">-->
+<!--                <div class="combobox dropdown-trigger dropdown-trigger_click"-->
+<!--                     style="display: flex; flex-direction: column; flex: 1 1 auto;">-->
+<!--                    <div class="combobox__form-element input-has-icon input-has-icon_right" style="flex: 1 1 auto; display: flex; align-items: center;"-->
+<!--                         role="none">-->
+<!--                        <input type="text" class="input combobox__input" style="color: #747474; padding: 0 1rem; width: 100%; line-height: 1.875rem; border: 1px solid #c9c9c9; border-radius: 0.25rem; background-color: #fff; box-shadow: #000; transition: border .1s, background-color .1s; display: inline-flex; text-align: left; min-height: calc(1.875rem + 2px);" aria-autocomplete="list" aria-controls="listbox-id-9" aria-expanded="false" aria-haspopup="listbox" autoComplete="off" role="combobox" placeholder="Search..." />-->
+<!--&lt;!&ndash;                        <div role="combobox"&ndash;&gt;-->
+<!--&lt;!&ndash;                             style="color: #747474; padding: 0 1rem; width: 100%; line-height: 1.875rem; border: 1px solid #c9c9c9; border-radius: 0.25rem; background-color: #fff; box-shadow: #000; transition: border .1s, background-color .1s; display: inline-flex; text-align: left; min-height: calc(1.875rem + 2px);"&ndash;&gt;-->
+<!--&lt;!&ndash;                             tabindex="0" class="input_faux combobox__input"&ndash;&gt;-->
+<!--&lt;!&ndash;                             aria-labelledby="combobox-label-id-5 combobox-id-53-selected-value"&ndash;&gt;-->
+<!--&lt;!&ndash;                             aria-controls="listbox-id-6" aria-expanded="false" aria-haspopup="listbox">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <span class="truncate" style="line-height: 1.875rem; font-size: 0.8125rem;">Select an Option…</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                        <span class="icon_container icon-utility-down input__icon input__icon_right" style="right: 0.875rem; width: 0.875rem; height: 0.875rem; position: absolute; top: 50%; margin-top:-0.5rem; line-height: 1; border: 0;display: inline-block; background-color: transparent;">-->
+<!--<svg xmlns="http://www.w3.org/2000/svg" fill="#000000"  viewBox="0 0 24 24"><path-->
+<!--        d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"/></svg>-->
+<!--</span>-->
+<!--                    </div>-->
+<!--                    <div id="listbox-id-6" class="dropdown dropdown_length-5 dropdown_fluid"-->
+<!--                         style="border: 1px solid #e5e5e5; border-radius: 0.25rem; padding: .25rem 0; margin: .125rem 0; box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16); color: #181818; display: block; visibility: visible; opacity: 1; top: 100%; max-height: 12.5rem; overflow-y: auto; position: absolute; z-index: 7000; width: 100%; min-width: 12rem; max-width: 100%;  left: 0%; "-->
+<!--                         role="listbox" aria-label="Placeholder for Dropdown Items" tabindex="0" aria-busy="false">-->
+<!--                        <ul class="listbox listbox_vertical" role="presentation" style="font-size: 0.75rem; list-style: none;  padding: 0;">-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div  class="media listbox__option listbox__option_plain media_small"-->
+<!--                                      style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Accounts">Accounts</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option34" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Reports">Reports</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option35" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Contacts">Contacts</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option36" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Files">Files</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option37" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Groups">Groups</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option38" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Leads">Leads</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option39" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Notes">Notes</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li role="presentation" class="listbox__item">-->
+<!--                                <div id="option40" class="media listbox__option listbox__option_plain media_small"-->
+<!--                                     style="padding: 0.5rem 0.75rem; display: flex; align-items: flex-start;"-->
+<!--                                     role="option">-->
+<!--                                    <span class="media__figure listbox__option-icon"></span>-->
+<!--                                    <span class="media__body">-->
+<!--<span class="truncate" title="Groups">Groups</span>-->
+<!--</span>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<p>using Simple Select Module </p>
+<section class="target"></section>
+
+<script !src="">
+    document.addEventListener('DOMContentLoaded', function () {
+        ss.run('.target', {value: ['apple', 'banana', 'carrot', 'melon']})
+    })
+</script>
+</body>
+</html>
